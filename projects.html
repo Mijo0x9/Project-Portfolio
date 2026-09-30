@@ -3,23 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M0x9 - Projects</title>
-    <link rel="stylesheet" href="styles/nature.css">    
+    <title>M0x9 - Home</title>
+    <link rel="stylesheet" href="entities/styles/nature.css">
 </head>
 <body>
     <div class="header">
-        <h1>M0x9</h1>
-        <a href="index.html"><img src="https://yt3.googleusercontent.com/iXcKqXg-rWWZVUGgOekHz84-tgoFq5lt3GCQ0dcmkGWvbs2X2df-J-F0fUVcRafmV0FF99TLyaY=s900-c-k-c0x00ffffff-no-rj" alt="M0x9 Avatar" width="200" class="home-button logo"></a>
+                <div class="logo">
+                <div class="logo-inner">
+                    <div class="logo-front"><a href="index.html"><img src="https://yt3.googleusercontent.com/iXcKqXg-rWWZVUGgOekHz84-tgoFq5lt3GCQ0dcmkGWvbs2X2df-J-F0fUVcRafmV0FF99TLyaY=s900-c-k-c0x00ffffff-no-rj" alt="M0x9 Avatar" width="200" class="home-button logo"></a></div>
+                    <div class="logo-back"><a href="index.html"><img src="https://i.pinimg.com/736x/5d/24/c3/5d24c31b7424102c8329c0f9e78ebab3.jpg" alt="M0x9 Avatar" width="200" class="home-button logo"></a></div>
+                </div>
+                </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="company.html">Company</a></li>
+                <li id="block1"><a href="index.html">Home</a></li>
+                <li id="block1"><a href="about.html">About</a></li>
+                <li id="block2"><a href="projects.html">Projects</a></li>
+                <li id="block2"><a href="company.html">Company</a></li>
             </ul>
         </nav>
     </div>
-    <h1>My Projects</h1>
-    <p>Here you can find information about my projects and experience.</p>
+    <h1>Projects, more and more.</h1>
+   <p>
+  <strong>HEXNET – DeltaHex (semi-public)</strong><br>
+  A free-to-use network for device encryption,<br>
+  with support for Bluetooth, Wi-Fi, LoRa and more.<br>
+  Part of the wider DeltaHex ecosystem: a modular hub ("The Shard") with LoRa/Meshtastic,<br>
+  attachable sensor modules, and time-based authentication between devices.<br><br>
+
+  <strong>D.E.L.T.A – AI (private)</strong><br>
+  An AI assistant with a unique structure for speed and ease of use,<br>
+  with multiple ways to communicate with the user and a sandboxed shell.<br>
+  Runs on a Telegram interface with two-tier memory, a model fallback chain<br>
+  and the ability to write its own tools.<br>
+  Also integrated into Home Assistant as a custom conversation agent.<br>
+  <em>The D.E.L.T.A project is private due to the risk of it being used outside a sandbox, container or virtual machine.</em><br><br>
+
+  <strong>D.E.L.T.A Watch OS</strong><br>
+  Custom firmware for an ESP32-S3 AMOLED touch watch (Waveshare).<br>
+  Dual-core build with a radial app drawer, watchface engine and apps like Flashlight, Timer, 2048 and Settings.<br>
+  Includes a PC Monitor applet that streams my PC screen to the watch over TCP<br>
+  and sends touch back as mouse input, plus a voice recorder that uploads to my server.<br><br>
+
+  <strong>Smart Home Controller</strong><br>
+  A wall-mounted controller on a 360×360 round touch display (ESP32-S3).<br>
+  Five-page UI with an HSV color wheel for lights, HVAC toggle, TV + amp control with a rotary volume gesture,<br>
+  all talking to Home Assistant through webhooks.<br><br>
+
+  <strong>HexHub</strong><br>
+  A Raspberry Pi 4 hub daemon that detects USB devices instantly and hands them to my main PC over USB/IP,<br>
+  with network audio in/out and a projector mode for connected displays.<br><br>
+
+  <strong>Homelab (Proxmox)</strong><br>
+  A Proxmox server running a GPU-passthrough CachyOS desktop streamed with Sunshine/Moonlight,<br>
+  Home Assistant, OpenMediaVault, Jellyfin, OctoPrint for 3D printing,<br>
+  and a Python container that hosts my own apps with a launcher, watchdog and backups.<br><br>
+
+  <strong>Jellyfin Custom Theme</strong><br>
+  A custom CSS theme for my Jellyfin server with a YouTube × Netflix look,<br>
+  a movie-style layout and a responsive grid for separate PC and phone layouts.<br><br>
+
+  <strong>Call Log Analyzer</strong><br>
+  A Python desktop tool (tkinter + matplotlib) with live Dutch/French/German/English switching.<br>
+  Has its own licensing system using Ed25519 signing and machine binding,<br>
+  backed by a two-port Flask architecture.<br><br>
+
+  <strong>DELTA File Manager</strong><br>
+  A Flask web app with a single-page frontend and a CodeMirror editor,<br>
+  drag-and-drop uploads, batch downloads as ZIP, recursive search and a drive browser.<br><br>
+
+  <strong>Last Stand Password Manager</strong><br>
+  A single-file Flask password manager with AES-256-GCM vault encryption,<br>
+  TOTP two-factor login, magic-link login, a kill switch and USB monitoring.<br><br>
+
+  <strong>DELTA Miner</strong><br>
+  A Lua mining program for Minecraft (CC:Tweaked turtles) with XYZ and area modes,<br>
+  fuel and inventory management, save/resume and a retro amber terminal UI.<br>
+  Also built a Command Computer program that syncs real-time weather and time into the game.<br><br>
+
+  <strong>Call Screening Trap</strong><br>
+  A custom voicemail setup that keeps robocallers talking to nothing,<br>
+  while still recording callers so I can listen back and spot scams.<br><br>
+
+  <strong>Stream Branding</strong><br>
+  Animated DELTA brand visuals and logo work made in DaVinci Resolve / Fusion.<br><br>
+
+  <strong>Electronics Builds</strong><br>
+  A Class D amplifier (TPA3116/TPA3255) built for home theater speakers,<br>
+  and a Raspberry Pi 4 Moonlight thin client.
+</p>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" aria-pressed="false">🌙</button>
+
+    <script src="entities/theme.js"></script>
 </body>
 </html>
