@@ -1,3 +1,4 @@
+/* ===== Global reset / base ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +7,7 @@
     color: #ffffff;
 }
 
+/* ===== Body background (dark mode) ===== */
 body {
     background-image: url('../images/Background-home.png');
     background-size: 100% 100%;
@@ -25,6 +27,7 @@ body {
     
 }
 
+/* ===== Animated background layer (camera shake) ===== */
 body::before {
     content: "";
     position: fixed;
@@ -43,6 +46,7 @@ body::before {
     animation: cameraShake 30s ease-in-out infinite;
 }
 
+/* ===== Home button (logo) ===== */
 .home-button {
     background-color: #000000;
     border: none;
@@ -62,11 +66,13 @@ p {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
 }
 
+/* ===== Logo (circular) ===== */
 .logo {
     color: #000000;
     border-radius: 50%;
 }
 
+/* ===== Header / navigation bar ===== */
 .header {
     display: flex;
     align-items: center;
@@ -93,6 +99,7 @@ p {
     transition: color 1s ease-in-out;
 }
 
+/* ===== Navigation menu ===== */
 nav {
     padding: 8px;
     border-radius: 8px;
@@ -124,6 +131,7 @@ nav ul li a:hover {
     background-color: #b92a2a;
 }
 
+/* ===== Logo 3D flip animation ===== */
 .logo {
     cursor: pointer;
     width: 70px;
@@ -161,6 +169,7 @@ nav ul li a:hover {
   transform: rotateY(180deg);
 }
 
+/* ===== Responsive layout (small screens) ===== */
 @media (max-width: 650px) {
     nav ul {
         display: grid;
@@ -179,7 +188,7 @@ nav ul li a:hover {
     }
 }
 
-
+/* ===== Camera shake keyframes ===== */
 @keyframes cameraShake {
     0%   { transform: translate(0px, 0px); }
     5%   { transform: translate(-2px, 1px); }

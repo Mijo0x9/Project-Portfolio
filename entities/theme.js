@@ -1,9 +1,11 @@
 (function () {
     'use strict';
 
+    /* ===== Constants ===== */
     var TOGGLE_ID = 'theme-toggle';
     var STORAGE_KEY = 'm0x9-theme';
 
+    /* ===== Apply theme to the page ===== */
     function applyTheme(theme) {
         var isLight = theme === 'light';
 
@@ -20,6 +22,7 @@
         }
     }
 
+    /* ===== Load saved theme (default: dark) ===== */
     var saved = 'dark';
     try {
         saved = localStorage.getItem(STORAGE_KEY) || 'dark';
@@ -28,6 +31,7 @@
 
     applyTheme(saved);
 
+    /* ===== Theme toggle button handler ===== */
     var toggle = document.getElementById(TOGGLE_ID);
     if (toggle) {
         toggle.addEventListener('click', function () {
