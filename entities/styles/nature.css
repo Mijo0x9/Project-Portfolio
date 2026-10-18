@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/entities/images/Background-home.png');
+    background-image: url('../images/Background-home.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body::before {
     position: fixed;
     inset: -20px;
 
-    background-image: url('/entities/images/Background-home.png');
+    background-image: url('../images/Background-home.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ body::after {
     position: fixed;
     inset: -20px;
 
-    background-image: url('/entities/images/Background.png');
+    background-image: url('../images/Background.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
